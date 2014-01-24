@@ -15,6 +15,10 @@
         [data-theme*="fill"].iphone-5c-white { fill: #EDEDED; }
         </style>
 
+        <clipPath id="glare">
+            <rect x="10" y="10" width="730" height="1570" rx="100" ry="100" />
+        </clipPath>
+
     </defs>
 
     <g transform="translate(25, 25)">
@@ -61,6 +65,8 @@
             <rect x="-22.5" y="-22.5" width="45" height="45" rx="8" yx="8" fill="none" stroke-width="5" stroke="#8A8E91" />
 
         </g>
+
+        <path d="M0 0 L800 0 L800 1500" fill="#fff" opacity="0.05" clip-path="url(#glare)" />
 
     </g>
 
