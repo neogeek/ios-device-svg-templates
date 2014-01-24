@@ -2,7 +2,7 @@
 
 ##iPhone 5c
 
-![screenshot](http://f.cl.ly/items/3243242B0e2l0J2t3M1D/ios-device-svg-templates-screenshot.png)
+![screenshot](http://f.cl.ly/items/2w1J3I3M0E2C12392z2M/ios-device-svg-templates-screenshot.png)
 
 ###Themes
 
