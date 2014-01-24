@@ -51,6 +51,8 @@
 
         </g>
 
+        <path d="M320 0 L800 0 L800 1600" fill="#fff" opacity="0.05" clip-path="url(#glare)" />
+
         <g transform="translate(375, 80)">
 
             <circle cx="0" cy="0" r="14" fill="#212425" />
@@ -66,8 +68,6 @@
 
         </g>
 
-        <path d="M0 0 L800 0 L800 1500" fill="#fff" opacity="0.05" clip-path="url(#glare)" />
-
     </g>
 
     <script>
@@ -79,7 +79,7 @@
             selectedTheme = document.location.search.match(/theme=([^&]+)/),
             themes = [ 'iphone-5c-blue', 'iphone-5c-green', 'iphone-5c-yellow', 'iphone-5c-red', 'iphone-5c-white' ] ;
 
-        if (screenshot.length) {
+        if (screenshot && screenshot.length) {
 
             document.querySelector('#screenshot').setAttribute('xlink:href', screenshot[1]);
 

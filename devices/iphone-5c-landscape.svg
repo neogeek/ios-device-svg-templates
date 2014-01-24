@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1640" height="800" viewBox="0 0 1640 800">
+
+    <defs>
+
+        <style>
+        [data-theme*="stroke"].iphone-5c-green { stroke: #8DD95B; }
+        [data-theme*="stroke"].iphone-5c-blue { stroke: #62BCF3; }
+        [data-theme*="stroke"].iphone-5c-yellow { stroke: #F6E26F; }
+        [data-theme*="stroke"].iphone-5c-red { stroke: #E4675D; }
+        [data-theme*="stroke"].iphone-5c-white { stroke: #EDEDED; }
+        [data-theme*="fill"].iphone-5c-green { fill: #8DD95B; }
+        [data-theme*="fill"].iphone-5c-blue { fill: #62BCF3; }
+        [data-theme*="fill"].iphone-5c-yellow { fill: #F6E26F; }
+        [data-theme*="fill"].iphone-5c-red { fill: #E4675D; }
+        [data-theme*="fill"].iphone-5c-white { fill: #EDEDED; }
+        </style>
+
+        <clipPath id="glare">
+            <rect x="10" y="10" width="1570" height="730" rx="100" ry="100" />
+        </clipPath>
+
+    </defs>
+
+    <g transform="translate(25, 25)">
+
+        <g>
+
+            <rect x="-18" y="108" width="30" height="122" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+
+            <rect x="212" y="743" width="70" height="30" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+
+            <rect x="328" y="743" width="108" height="30" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+
+            <rect x="477" y="743" width="108" height="30" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+
+        </g>
+
+        <g>
+
+            <rect x="10" y="10" width="1570" height="730" rx="100" ry="100" fill="#000" stroke-width="10" stroke="#353535" />
+
+            <rect width="1590" height="750" rx="110" ry="110" fill="none" stroke-width="20" data-theme="stroke" class="iphone-5c-green" id="border" />
+
+        </g>
+
+        <g transform="translate(226, 55)">
+
+            <rect width="1136" height="640" fill="#111" />
+
+            <image xlink:href="" x="0" y="0" width="1136" height="640" id="screenshot" />
+
+        </g>
+
+        <path d="M800 0 L1640 0 L1640 2800" fill="#fff" opacity="0.05" clip-path="url(#glare)" />
+
+        <g transform="translate(80, 375)">
+
+            <circle cx="0" cy="0" r="14" fill="#212425" />
+
+            <rect x="50" y="-70" width="30" height="140" rx="15" ry="15" fill="#212425" />
+
+        </g>
+
+        <g transform="translate(1470, 375)">
+
+            <circle cx="0" cy="0" r="65" fill="#212425" />
+            <rect x="-22.5" y="-22.5" width="45" height="45" rx="8" yx="8" fill="none" stroke-width="5" stroke="#8A8E91" />
+
+        </g>
+
+    </g>
+
+    <script>
+    <![CDATA[
+
+    (function () {
+
+        var screenshot = document.location.search.match(/screenshot=([^&]+)/),
+            selectedTheme = document.location.search.match(/theme=([^&]+)/),
+            themes = [ 'iphone-5c-blue', 'iphone-5c-green', 'iphone-5c-yellow', 'iphone-5c-red', 'iphone-5c-white' ] ;
+
+        if (screenshot && screenshot.length) {
+
+            document.querySelector('#screenshot').setAttribute('xlink:href', screenshot[1]);
+
+        }
+
+        if (selectedTheme && selectedTheme.length === 2 && themes.indexOf(selectedTheme[1]) !== -1) {
+
+            Array.prototype.slice.call(document.querySelectorAll('[data-theme]')).forEach(function (obj) {
+
+                obj.setAttribute('class', selectedTheme[1]);
+
+            });
+
+        }
+
+    }());
+
+    ]]>
+    </script>
+
+</svg>
