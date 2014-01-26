@@ -26,6 +26,8 @@
     width="600" height="300"></object>
 ```
 
+With theme specified:
+
 ```html
 <object type="image/svg+xml"
     data="iphone-5c-portrait.svg?screenshot=neo-geek.net-portrait.png&amp;theme=iphone-5c-red"
