@@ -25,13 +25,13 @@
 
         <g>
 
-            <rect x="500" y="-18" width="122" height="30" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+            <rect x="500" y="-18" width="122" height="30" rx="3" ry="3" fill="#8DD95B" class="iphone-5c-green" data-theme="fill" />
 
-            <rect x="-17" y="212" width="30" height="70" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+            <rect x="-17" y="212" width="30" height="70" rx="3" ry="3" fill="#8DD95B" class="iphone-5c-green" data-theme="fill" />
 
-            <rect x="-17" y="328" width="30" height="108" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+            <rect x="-17" y="328" width="30" height="108" rx="3" ry="3" fill="#8DD95B" class="iphone-5c-green" data-theme="fill" />
 
-            <rect x="-17" y="477" width="30" height="108" rx="3" ry="3" class="iphone-5c-green" data-theme="fill" />
+            <rect x="-17" y="477" width="30" height="108" rx="3" ry="3" fill="#8DD95B" class="iphone-5c-green" data-theme="fill" />
 
         </g>
 
@@ -39,7 +39,7 @@
 
             <rect x="10" y="10" width="730" height="1570" rx="100" ry="100" fill="#000" stroke-width="10" stroke="#353535" />
 
-            <rect width="750" height="1590" rx="110" ry="110" fill="none" stroke-width="20" data-theme="stroke" class="iphone-5c-green" id="border" />
+            <rect width="750" height="1590" rx="110" ry="110" fill="none" stroke-width="20" stroke="#8DD95B" data-theme="stroke" class="iphone-5c-green" id="border" />
 
         </g>
 

@@ -31,3 +31,10 @@ With theme specified:
 <object type="image/svg+xml"
     data="iphone-5c-landscape.svg?screenshot=neo-geek.net-landscape.png&amp;theme=iphone-5c-red"></object>
 ```
+
+###Converting to Static PNG With ImageMagick
+
+```bash
+composite -geometry +80+251 screenshot-portrait.png iphone-5c-portrait.svg'[800x1640]' output.png
+composite -geometry +251+80 screenshot-landscape.png iphone-5c-landscape.svg'[1640x800]' output.png
+```
