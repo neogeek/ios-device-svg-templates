@@ -35,6 +35,6 @@ With theme specified:
 ###Converting to Static PNG With ImageMagick
 
 ```bash
-composite -geometry +80+251 screenshot-portrait.png iphone-5c-portrait.svg'[800x1640]' output.png
-composite -geometry +251+80 screenshot-landscape.png iphone-5c-landscape.svg'[1640x800]' output.png
+composite -background transparent -geometry +80+251 screenshot-portrait.png iphone-5c-portrait.svg'[800x1640]' output.png
+composite -background transparent -geometry +251+80 screenshot-landscape.png iphone-5c-landscape.svg'[1640x800]' output.png
 ```
